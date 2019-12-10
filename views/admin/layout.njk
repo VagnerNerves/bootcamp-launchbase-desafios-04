@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block head %}
+            
+            <title>Foodly Administrador</title>
+
+        {% endblock %}    
+
+        <link rel="stylesheet" href="/stylesadmin.css">
+    </head>
+    <body>
+        <header>
+            <div class="links">
+                <a class="logo" href="/admin/recipes"><img src="/assets/logowhite.png" alt="Logo Empresa Foodly"></a> 
+            </div>
+        </header>
+
+        {% block content %}
+
+        {% endblock content %}
+
+        <footer>
+            <p>Todos direitos reservados, receitas Foodly.</p>
+        </footer>
+        
+        {% block scripts %}
+        
+        {% endblock scripts %}
+    </body>
+</html>        

@@ -1,0 +1,41 @@
+<section class="form__recipe">
+    <p>Titulo da receita</p>   
+    <input type="text" name="title" placeholder="Titulo da Instrutor" value="{{ recipe.title }}">
+
+    <p>Imagem da receita</p>   
+    <input type="url" name="image" placeholder="Nome do Instrutor" value="{{ recipe.image }}">
+
+    <p>Autor</p>   
+    <input type="text" name="author" placeholder="Nome do Autor" value="{{ recipe.author }}">
+
+    <p>Ingredientes</p>   
+    <div id="ingredients">
+        {% for ingredient in recipe.ingredients %}
+            <div class="ingredient">
+                <input type="text" name="ingredients[]" value="{{ ingredient }}" placeholder="Ingredient" />
+            </div>
+        {% else %}  
+            <div class="ingredient">
+                <input type="text" name="ingredients[]" value="{{ ingredient }}" placeholder="Ingredient" />
+            </div>
+        {% endfor %}    
+    </div>
+    <button type="button" class="add-ingredient">Adicionar novo Ingrediente</button>
+
+    <p>Modo de Preparo</p>   
+    <div id="preparations">
+        {% for preparation in recipe.preparation %}
+            <div class="preparation">
+                <input type="text" name="preparation[]" placeholder="Modo de Preparo" value="{{ preparation }}">
+            </div> 
+        {% else %}     
+            <div class="preparation">
+                <input type="text" name="preparation[]" placeholder="Modo de Preparo" value="">
+            </div>
+        {% endfor %}      
+    </div>
+    <button type="button" class="add-preparation">Adicionar novo passo</button>
+
+    <p>Informações Adicionais</p>   
+    <textarea name="information" placeholder="Informações Adicionais" >{{ recipe.information }}</textarea>
+</section>

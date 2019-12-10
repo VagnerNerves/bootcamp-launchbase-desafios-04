@@ -1,0 +1,45 @@
+{% extends "site/layout.njk" %}
+
+{% block content %}
+
+<div class="banner">
+    <div class="painel">
+        <div class="painel__texto">
+            <h1>As melhores receitas</h1>
+            <p>Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.</p>
+        </div>
+        <div class="painel__image">
+            <img src="/assets/chef.png" alt="Boneco Banner">
+        </div>
+    </div>
+</div>
+
+<div class="titulo">
+    <h2>Mais acessadas</h2>
+</div>
+
+<section class="cards">
+
+{% for revenue in revenues %}
+
+    <div class="card">
+        <div class="card__image">
+            <img src="{{revenue.image}}" alt="{{revenue.title}}">
+        </div>
+        <div class="card__info">
+            <p class="descricao">{{revenue.title}}</p>
+            <p class="autor">por {{revenue.author}}</p>
+        </div>
+    </div>
+   
+{% endfor %}  
+
+ </section>  
+
+{% endblock %}
+
+{% block scripts %}
+
+    <script src="script.js"></script>
+        
+{% endblock scripts %}

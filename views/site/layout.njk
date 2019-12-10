@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block head %}
+            
+            <title>Foodly</title>
+
+        {% endblock %}    
+
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="links">
+                <a class="logo" href="/"><img src="/assets/logo.png" alt="Logo Empresa Foodly"></a> 
+                <a class="link" href="/about">Sobre</a>
+                <a class="link" href="/revenue">Receitas</a>
+            </div>
+        </header>
+
+        {% block content %}
+
+        {% endblock %}
+
+        <footer>
+            <p>Todos direitos reservados, receitas Foodly.</p>
+        </footer>
+
+        {% block scripts %}
+        
+        {% endblock scripts %}
+
+    </body>
+</html>        
+
