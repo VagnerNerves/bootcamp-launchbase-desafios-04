@@ -12,6 +12,7 @@
 Para executar o projeto, baixe ele e delete as pastas "node_modules" e "package-lock.json", depois execute os comandos:
 - npm install
 - npm start
+
 Ele ira abrir automaticamente.
 
 Para acessar a pagina de aministração digita na barra: /admin/recipes
