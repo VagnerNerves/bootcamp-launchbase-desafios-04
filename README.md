@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Vagner Nerves" src="https://github.com/VagnerNerves/bootcamp-launchbase-desafios-04/imgs/VagnerNerves" width="250px" />
+    <img alt="Vagner Nerves" src="https://github.com/VagnerNerves/bootcamp-launchbase-desafios-04/blob/master/imgs/VagnerNerves.png" width="250px" />
 </h1>
 
 <h2 align="center">
