@@ -1,10 +1,5 @@
-<h1 align="center">
-    <img alt="Vagner Nerves" src="https://github.com/VagnerNerves/bootcamp-launchbase-desafios-04/blob/master/imgs/VagnerNerves.png" width="250px" />
-</h1>
+#Desafio: Foodfy
 
-<h2 align="center">
-  Desafio: Foodfy
-</h2>
 
 ##Objetivo
   O desafio tem por objetivo desonvolver a pagina de visualização de receitas e uma página de administração onde se cadastra, edita e deleta uma receita.
